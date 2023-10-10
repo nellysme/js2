@@ -1,0 +1,24 @@
+{
+  "name": "js2",
+  "version": "0.0.1",
+  "description": "Social media platform using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nellysme/js2.git"
+  },
+  "keywords": [
+    "javascript",
+    "social",
+    "media"
+  ],
+  "author": "Nelly Smedsrud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nellysme/js2/issues"
+  },
+  "homepage": "https://github.com/nellysme/js2#readme"
+}
