@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="/dist/css/styles.css">
+</head>
+<body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+      style="max-width: 800px"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <img
+          class="image pb-4 w-25"
+          src="/img/catpaw-orange.png"
+          alt="cat-paw"
+        />
+
+        <form id="registerForm" action="/profile" class="p-3 container w-75" novalidate>
+          
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Your Username"
+              required
+            />
+            <label for="username">Username</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="email">Email address</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+              required
+              minlength="8"
+            />
+            <label for="floatingPassword">Password (min. 8 characters)</label>
+          </div>
+
+          <div class="container d-flex flex-column align-items-center">
+            <button
+              class="w-100 btn btn-lg btn-primary mt-4 mb-4"
+              id="login"
+              type="submit"
+            >
+              Register
+            </button>
+            <a href="/index.html" class="text-secondary p-4">Cancel</a>
+            <p class="text-center">
+              Already have an account? <a href="/index.html">Log in</a>
+            </p>
+          </div>
+        </form>
+        
+        <div id="error-message"></div>
+      </div>
+    </div>
+      <footer>
+        <p class="text-center">&copy; 2023 - Nelly</p>
+    </footer>
+    <script src="js/validateEmail.js"></script>
+</body>
+</html>
