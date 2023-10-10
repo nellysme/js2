@@ -15,6 +15,14 @@
   transform: rotate(30deg);
 }
 
+#image-profile {
+  background-color: #FEB35E;
+}
+
+.bg-orange {
+  background-color: #FEB35E;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
