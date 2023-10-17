@@ -22,46 +22,48 @@
           alt="cat-paw"
          
         />
-        <form id="registerForm" action="/profile" class="p-3 container w-75" novalidate>
-          <div class="form-floating mb-3">
+        <form id="loginForm" class="p-3 container w-75">
+
+
+          <div class="form-group mb-2">
+            <label for="">Email</label>
             <input
-              type="email"
               class="form-control"
-              id="email"
-              placeholder="name@example.com"
+              type="email"
+              name="email"
               required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Only @(stud.)noroff.no is allowed"
             />
-            <label for="email">Email address</label>
           </div>
 
-          <div class="form-floating mb-3">
+          <div class="form-group mb-2">
+            <label for="">Password</label>
             <input
-              type="password"
               class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
+              type="password"
+              name="password"
               required
               minlength="8"
             />
-            <label for="floatingPassword">Password (min. 8 characters)</label>
           </div>
-
-          <div class="container d-flex flex-column align-items-center">
-            <button
-              class="w-100 btn btn-lg btn-primary mt-4 mb-4"
-              id="login"
-              type="submit"
-            >
-              Log in
-            </button>
-            <p class="text-center">
-              Don't have an account yet? <a href="/register/index.html">Sign up</a>
-            </p>
-          </div>
+          <button
+            class="w-100 btn btn-lg btn-primary mt-4 mb-4"
+            id="login"
+            type="submit"
+          >
+            Log in
+          </button>
         </form>
+        <p class="text-center">
+              Dont have an account yet? <a href="register/index.html">Sign up</a>
+            </p>
         
         <div id="error-message"></div>
       </div>
     </div>
+    <footer>
+      <p class="text-center">&copy; 2023 - Nelly</p>
+    </footer>
 </body>
 </html>

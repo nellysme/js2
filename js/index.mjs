@@ -1,3 +1,10 @@
-import * as constants from "./api/constants.mjs";
+import { setRegisterFormListner } from "./handlers/register.mjs";
+import { setLoginFormListner } from "./handlers/login.mjs";
 
-console.log(constants.API_SOCIAL_URL);
+const path = location.pathname;
+
+if (path === "/index.html") {
+  setLoginFormListner();
+} else if (path === "/register/index.html") {
+  setRegisterFormListner();
+}
