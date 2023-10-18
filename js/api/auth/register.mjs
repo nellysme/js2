@@ -1,6 +1,6 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
 
-const action = "/auth/register";
+const action = "/social/auth/register";
 const method = "post";
 
 export async function register(profile) {

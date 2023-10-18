@@ -16,3 +16,10 @@ export async function createPost(postData) {
   return await response.json();
 
 }
+
+let tagArray = [];
+const tagInputs = document.querySelectorAll("#tagInput");
+tagInputs.forEach((input) => {
+  tagArray.push(input.value);
+});
+
