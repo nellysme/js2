@@ -22,5 +22,16 @@ export async function login(profile) {
 
   storage.save("profile", user);
 
-  alert("You are now logged in");
+  
+
+  if (response.ok) {
+    window.location.href = "feed/index.html";
+  } else {
+    console.log("Login failed. Handle the error.");
+    emailError.style.display = "flex";
+    passwordError.style.display = "flex";
+  }
 }
+
+
+
