@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+<link rel="stylesheet" href="/dist/css/styles.css" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <script src="/js/index.mjs" defer type="module"></script>
+
+</head>
+<body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+      style="max-width: 800px"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <img
+          class="image pb-4 w-25"
+          src="img/catpaw-orange.png"
+          alt="cat-paw"
+         
+        />
+        <form id="loginForm" class="p-3 container w-75">
+
+
+          <div class="form-group mb-2">
+            <label for="">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Only @(stud.)noroff.no is allowed"
+            />
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              required
+              minlength="8"
+            />
+          </div>
+          <button
+            class="w-100 btn btn-lg btn-primary mt-4 mb-4"
+            id="login"
+            type="submit"
+          >
+            Log in
+          </button>
+        </form>
+        <p class="text-center">
+              Dont have an account yet? <a href="/register/index.html">Sign up</a>
+            </p>
+        
+        <div id="error-message"></div>
+      </div>
+    </div>
+    <footer>
+      <p class="text-center">&copy; 2023 - Nelly</p>
+    </footer>
+</body>
+</html>
