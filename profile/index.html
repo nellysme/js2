@@ -8,25 +8,40 @@
   <link rel="stylesheet" href="/dist/css/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg p-3 bg-orange">
+    <nav class="navbar navbar-expand-lg p-3 bg-orange">
+      <a class="navbar-brand" href="/index.html">MeowFeed</a>
 
-    <a class="navbar-brand" href="/index.html">MeowFeed</a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/feed/index.html">Feed</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/profile/index.html">Profile</a>
-            </li>
-           
+          <li class="nav-item active">
+            <a class="nav-link" href="/feed/index.html">Feed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profile/index.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/post/create/index.html">Post</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="/post/edit/index.html">Edit post</a>
+          </li>
         </ul>
-    </div>
-</nav>
+        <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+      </div>
+    </nav>
 
 <div class="container mt-5">
     <div class="row d-flex justify-content-center">
